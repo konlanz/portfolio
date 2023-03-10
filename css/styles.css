@@ -93,4 +93,40 @@ span {
 }
 
 /* media queries */
+@media screen and (min-width:670px) {
+    .top-nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:670px) {
+    .top-nav {
+        flex-direction: row;
+        justify-content: center;
+}
+}
 
+@media screen and (min-width:890px) {
+    .top-nav {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .list__item {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+    }
+    .main-body {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .img {
+        height: 40rem;
+        width: 40rem;
+    }
+    .btn {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+
+}
