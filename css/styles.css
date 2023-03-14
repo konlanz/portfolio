@@ -18,6 +18,8 @@ body {
 .list__item {
     padding: 1rem;
     font-size: 1.5rem;
+    transition: color .3s;
+    cursor: pointer;
 }
 
 .list__item:hover {
@@ -32,101 +34,32 @@ body {
 .home {
     color: var(--color-secondary);
 }
-/* main body */
-.main-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 6rem;
-}
-span {
-    display: inline-block;
-}
-.intro__text {
-    color: #fff;
-    padding: 1.4rem;
-}
-
-.hello{
-    font-size: 3rem;
-    font-weight: 500;
-    margin-left: 4rem;
-}
-.name {
-    font-weight: 700;
-    font-size: 4rem;
-}
-.backend {
-    color: var(--color-secondary);
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.img {
-    /* object-fit: cover;
-    height: 60rem;
-    width: 34rem; */
-    margin-top: 7rem;
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-}
-/* BUTTON */
-.btn {
-    padding: 1.5rem 7rem;
-    background: var(--color-secondary);
-    border: 0;
-    border-radius: 70px;
-    font-size: 1.2rem;
-    margin-top: 3rem;
-    transition: background-color .3s;
-}
-
-.btn:hover {
-    color: var(--color-secondary);
-    background-color: var(--background-color);
-    border: 1px solid var(--color-secondary);
-    cursor: pointer;
-}
-
-.bottom__hr {
-    margin-top: 3rem;
-    width: 70%;
-}
-
-/* media queries */
-@media screen and (min-width:670px) {
+/* Mobiles */
+@media screen and (min-width:768px) {
     .top-nav {
         flex-direction: row;
         justify-content: center;
-    }
-}
-@media screen and (min-width:670px) {
-    .top-nav {
-        flex-direction: row;
-        justify-content: center;
-}
-}
 
-@media screen and (min-width:890px) {
-    .top-nav {
-        flex-direction: row;
-        justify-content: flex-end;
     }
     .list__item {
         font-size: 1.2rem;
-        margin-right: 1rem;
     }
-    .main-body {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .img {
-        height: 40rem;
-        width: 40rem;
-    }
-    .btn {
-        padding: 1rem 1.5rem;
-        font-size: 1rem;
-    }
-
-
 }
+
+/* Table */
+@media screen and (min-width:1024px) {
+    .top-nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 1.2rem 6.5rem 0 0;
+    }
+    .list__item {
+        font-size: 1.1rem;
+    }
+    .portfolio {
+        box-sizing: border-box;
+        margin-right: 30rem;
+    }
+}
+/* TODO: fix the positioning of the portfolio and also add the menu icon to make it 
+clickable to get ddl */
