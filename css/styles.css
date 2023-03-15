@@ -5,6 +5,9 @@ body {
     --color-secondary: #4bffa5;
     background-color: var(--background-color);
 }
+a {
+    text-decoration: none;
+}
 .top-nav {
     list-style: none;
     display: flex;
@@ -15,14 +18,14 @@ body {
     margin-bottom: 6rem;
 }
 
-.list__item {
+.nav__item {
     padding: 1rem;
     font-size: 1.5rem;
     transition: color .3s;
-    cursor: pointer;
+    color: var(--color-primary);
 }
 
-.list__item:hover {
+.nav__item:hover {
     color: var(--color-secondary);
 }
 
@@ -34,32 +37,80 @@ body {
 .home {
     color: var(--color-secondary);
 }
-/* Mobiles */
+
+/* main-body */
+.main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body__text {
+    color: var(--color-primary);
+}
+.backend {
+    color: var(--color-secondary);
+}
+.hello {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+.name {
+    font-size: 4rem;
+    margin: 0;
+}
+.backend {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1.6rem;
+}
+
+.img {
+    margin: 3rem;
+    width: 100%;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+/* Tablets */
 @media screen and (min-width:768px) {
     .top-nav {
         flex-direction: row;
         justify-content: center;
 
     }
-    .list__item {
+    .nav__item {
         font-size: 1.2rem;
+    }
+    .img {
+        width: 70%;
     }
 }
 
-/* Table */
+/* Desktop */
 @media screen and (min-width:1024px) {
     .top-nav {
         flex-direction: row;
         justify-content: flex-end;
         margin: 1.2rem 6.5rem 0 0;
     }
-    .list__item {
+    .nav__item {
         font-size: 1.1rem;
     }
-    .portfolio {
+    /* .portfolio {
         box-sizing: border-box;
         margin-right: 30rem;
+    } */
+    .main-body {
+        flex-direction: row;
+    }
+    .img {
+        width: 48%;
+        padding-left: 7rem;
+    }
+    .bd-text {
+        margin-left: 6rem;
     }
 }
-/* TODO: fix the positioning of the portfolio and also add the menu icon to make it 
-clickable to get ddl */
+
+
+
