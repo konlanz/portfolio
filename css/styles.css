@@ -30,12 +30,17 @@ a {
 }
 
 .portfolio {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
+    /* margin: 0; */
+    display: inline;
 }
 
 .home {
     color: var(--color-secondary);
+}
+.menu-icon {
+    color: #fff;
 }
 
 /* main-body */
@@ -71,6 +76,20 @@ a {
     width: 100%;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 }
+/* Button
+.btn {
+    box-shadow: 0 0 10px #4bffa5;
+    background-color: var(--color-secondary);
+    color: #000;
+    padding: 1rem 3rem;
+    border-radius: 55px;
+    font-weight: 450;
+}
+.btn:hover {
+    background-color: var(--background-color);
+    border: 1.3px solid var(--color-secondary);
+    box-shadow: 0;
+} */
 /* Tablets */
 @media screen and (min-width:768px) {
     .top-nav {
